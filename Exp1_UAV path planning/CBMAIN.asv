@@ -1,0 +1,259 @@
+close all
+clear
+clc
+dbstop if all error
+global model
+model = CreateModel(); % 创建模型
+F='F1';
+[Xmin,Xmax,dim,fobj] = fun_info(F);%获取函数信息
+%% 参数定义阶段
+pop=50;%种群大小
+maxgen=1;%最大迭代次数
+totalcost=[];
+
+%% 算法执行阶段
+[fMin1,bestX1,ConvergenceCurve1] = DBO(pop, maxgen,Xmin,Xmax,dim,fobj);
+[fMin2,bestX2,ConvergenceCurve2] = AVOA(pop, maxgen,Xmin,Xmax,dim,fobj);
+[fMin3,bestX3,ConvergenceCurve3] = WOA(pop, maxgen,Xmin,Xmax,dim,fobj);
+[fMin4,bestX4,ConvergenceCurve4] = HLBO(pop, maxgen,Xmin,Xmax,dim,fobj);
+[fMin5,bestX5,ConvergenceCurve5] = PO(pop, maxgen,Xmin,Xmax,dim,fobj);
+[fMin6,bestX6,ConvergenceCurve6] = NRBO(pop, maxgen,Xmin,Xmax,dim,fobj);
+[fMin7,bestX7,ConvergenceCurve7] = LEA(pop, maxgen,Xmin,Xmax,dim,fobj);
+[fMin8,bestX8,ConvergenceCurve8] = HO(pop, maxgen,Xmin,Xmax,dim,fobj);
+[fMin9,bestX9,ConvergenceCurve9] = HLOA(pop, maxgen,Xmin,Xmax,dim,fobj);
+[fMin10,bestX10,ConvergenceCurve10] = HEOA(pop, maxgen,Xmin,Xmax,dim,fobj);
+[fMin11,bestX11,ConvergenceCurve11] = GOOSE(pop, maxgen,Xmin,Xmax,dim,fobj);
+[fMin12,bestX12,ConvergenceCurve12] = CPO(pop, maxgen,Xmin,Xmax,dim,fobj);
+[fMin13,bestX13,ConvergenceCurve13] = HPHHO(pop, maxgen,Xmin,Xmax,dim,fobj);
+[fMin14,bestX14,ConvergenceCurve14] = AGWO(pop, maxgen,Xmin,Xmax,dim,fobj);
+[fMin15,bestX15,ConvergenceCurve15] = BKA(pop, maxgen,Xmin,Xmax,dim,fobj);
+[fMin16,bestX16,ConvergenceCurve16] = COA(pop, maxgen,Xmin,Xmax,dim,fobj);
+[fMin17,bestX17,ConvergenceCurve17] = MCOA(pop, maxgen,Xmin,Xmax,dim,fobj);
+
+%% DBO算法获取无人机成本
+N=length(bestX1)/(3*model.n);%无人机的数量
+St=1;
+for i=1:N %计算每个无人机的适应度值
+    Et=St+3*model.n-1;
+    Xbest1=bestX1(St:Et);
+    BestPosition(i,:) = SphericalToCart(Xbest1);%% 计算航迹坐标
+    BestFit1(i)=MyCost(Xbest1,1);%% 计算每个无人机的适应度值
+    UAVfit1(i,:)=MyCost(Xbest1,2);
+    St=Et+1;
+end
+
+%% AVOA算法获取无人机成本
+N=length(bestX2)/(3*model.n);%无人机的数量
+St=1;
+for i=1:N %计算每个无人机的适应度值
+    Et=St+3*model.n-1;
+    Xbest2=bestX2(St:Et);
+    BestPosition(i,:) = SphericalToCart(Xbest2);%% 计算航迹坐标
+    BestFit2(i)=MyCost(Xbest2,1);%% 计算每个无人机的适应度值
+    UAVfit2(i,:)=MyCost(Xbest2,2);
+    St=Et+1;
+end
+
+%% WOA 运行规划
+N=length(bestX3)/(3*model.n);%无人机的数量
+St=1;
+for i=1:N %计算每个无人机的适应度值
+    Et=St+3*model.n-1;
+    Xbest3=bestX3(St:Et);
+    BestPosition(i,:) = SphericalToCart(Xbest3);%% 计算航迹坐标
+    BestFit3(i)=MyCost(Xbest3,1);%% 计算每个无人机的适应度值
+    UAVfit3(i,:)=MyCost(Xbest3,2);
+    St=Et+1;
+end
+
+%% HLBO 运行规划
+N=length(bestX4)/(3*model.n);%无人机的数量
+St=1;
+for i=1:N %计算每个无人机的适应度值
+    Et=St+3*model.n-1;
+    Xbest4=bestX4(St:Et);
+    BestPosition(i,:) = SphericalToCart(Xbest4);%% 计算航迹坐标
+    BestFit4(i)=MyCost(Xbest4,1);%% 计算每个无人机的适应度值
+    UAVfit4(i,:)=MyCost(Xbest4,2);
+    St=Et+1;
+end
+
+%% PO 运行规划
+N=length(bestX5)/(3*model.n);%无人机的数量
+St=1;
+for i=1:N %计算每个无人机的适应度值
+    Et=St+3*model.n-1;
+    Xbest5=bestX5(St:Et);
+    BestPosition(i,:) = SphericalToCart(Xbest5);%% 计算航迹坐标
+    BestFit5(i)=MyCost(Xbest5,1);%% 计算每个无人机的适应度值
+    UAVfit5(i,:)=MyCost(Xbest5,2);
+    St=Et+1;
+end
+
+%% NRBO 运行规划
+N=length(bestX6)/(3*model.n);%无人机的数量
+St=1;
+for i=1:N %计算每个无人机的适应度值
+    Et=St+3*model.n-1;
+    Xbest6=bestX6(St:Et);
+    BestPosition(i,:) = SphericalToCart(Xbest6);%% 计算航迹坐标
+    BestFit6(i)=MyCost(Xbest6,1);%% 计算每个无人机的适应度值
+    UAVfit6(i,:)=MyCost(Xbest6,2);
+    St=Et+1;
+end
+
+%% LEA 运行规划
+N=length(bestX7)/(3*model.n);  %无人机的数量
+St=1;
+for i=1:N %计算每个无人机的适应度值
+    Et=St+3*model.n-1;
+    Xbest7=bestX7(St:Et);
+    BestPosition(i,:) = SphericalToCart(Xbest7);%% 计算航迹坐标
+    BestFit7(i)=MyCost(Xbest7,1);  %% 计算无人机的总成本
+    UAVfit7(i,:)=MyCost(Xbest7,2);  %% 计算无人机的四个成本
+    St=Et+1;
+end
+
+%% HO 运行规划
+N=length(bestX8)/(3*model.n);  %无人机的数量
+St=1;
+for i=1:N %计算每个无人机的适应度值
+    Et=St+3*model.n-1;
+    Xbest8=bestX8(St:Et);
+    BestPosition(i,:) = SphericalToCart(Xbest8);%% 计算航迹坐标
+    BestFit8(i)=MyCost(Xbest8,1);  %% 计算无人机的总成本
+    UAVfit8(i,:)=MyCost(Xbest8,2);  %% 计算无人机的四个成本
+    St=Et+1;
+end
+
+%% HLOA 运行规划
+N=length(bestX9)/(3*model.n);  %无人机的数量
+St=1;
+for i=1:N %计算每个无人机的适应度值
+    Et=St+3*model.n-1;
+    Xbest9=bestX9(St:Et);
+    BestPosition(i,:) = SphericalToCart(Xbest9);%% 计算航迹坐标
+    BestFit9(i)=MyCost(Xbest9,1);  %% 计算无人机的总成本
+    UAVfit9(i,:)=MyCost(Xbest9,2);  %% 计算无人机的四个成本
+    St=Et+1;
+end
+%% HEOA 运行规划
+N=length(bestX10)/(3*model.n);  %无人机的数量
+St=1;
+for i=1:N %计算每个无人机的适应度值
+    Et=St+3*model.n-1;
+    Xbest10=bestX10(St:Et);
+    BestPosition(i,:) = SphericalToCart(Xbest10);%% 计算航迹坐标
+    BestFit10(i)=MyCost(Xbest10,1);  %% 计算无人机的总成本
+    UAVfit10(i,:)=MyCost(Xbest10,2);  %% 计算无人机的四个成本
+    St=Et+1;
+end
+%% GOOSE 运行规划
+N=length(bestX11)/(3*model.n);  %无人机的数量
+St=1;
+for i=1:N %计算每个无人机的适应度值
+    Et=St+3*model.n-1;
+    Xbest11=bestX11(St:Et);
+    BestPosition(i,:) = SphericalToCart(Xbest11);%% 计算航迹坐标
+    BestFit11(i)=MyCost(Xbest11,1);  %% 计算无人机的总成本
+    UAVfit11(i,:)=MyCost(Xbest11,2);  %% 计算无人机的四个成本
+    St=Et+1;
+end
+
+%% CPO 运行规划
+N=length(bestX12)/(3*model.n);  %无人机的数量
+St=1;
+for i=1:N %计算每个无人机的适应度值
+    Et=St+3*model.n-1;
+    Xbest12=bestX12(St:Et);
+    BestPosition(i,:) = SphericalToCart(Xbest12);%% 计算航迹坐标
+    BestFit12(i)=MyCost(Xbest12,1);  %% 计算无人机的总成本
+    UAVfit12(i,:)=MyCost(Xbest12,2);  %% 计算无人机的四个成本
+    St=Et+1;
+end
+
+%% HPHHO 运行规划
+N=length(bestX13)/(3*model.n);  %无人机的数量
+St=1;
+for i=1:N %计算每个无人机的适应度值
+    Et=St+3*model.n-1;
+    Xbest13=bestX13(St:Et);
+    BestPosition(i,:) = SphericalToCart(Xbest13);%% 计算航迹坐标
+    BestFit13(i)=MyCost(Xbest13,1);  %% 计算无人机的总成本
+    UAVfit13(i,:)=MyCost(Xbest13,2);  %% 计算无人机的四个成本
+    St=Et+1;
+end
+
+%% AGWO 运行规划
+N=length(bestX14)/(3*model.n);  %无人机的数量
+St=1;
+for i=1:N %计算每个无人机的适应度值
+    Et=St+3*model.n-1;
+    Xbest14=bestX14(St:Et);
+    BestPosition(i,:) = SphericalToCart(Xbest14);%% 计算航迹坐标
+    BestFit14(i)=MyCost(Xbest14,1);  %% 计算无人机的总成本
+    UAVfit14(i,:)=MyCost(Xbest14,2);  %% 计算无人机的四个成本
+    St=Et+1;
+end
+%% BKA 运行规划
+N=length(bestX15)/(3*model.n);  %无人机的数量
+St=1;
+for i=1:N %计算每个无人机的适应度值
+    Et=St+3*model.n-1;
+    Xbest15=bestX15(St:Et);
+    BestPosition(i,:) = SphericalToCart(Xbest15);%% 计算航迹坐标
+    BestFit15(i)=MyCost(Xbest15,1);  %% 计算无人机的总成本
+    UAVfit15(i,:)=MyCost(Xbest15,2);  %% 计算无人机的四个成本
+    St=Et+1;
+end
+
+%% COA 运行规划
+N=length(bestX16)/(3*model.n);  %无人机的数量
+St=1;
+for i=1:N %计算每个无人机的适应度值
+    Et=St+3*model.n-1;
+    Xbest16=bestX16(St:Et);
+    BestPosition(i,:) = SphericalToCart(Xbest16);%% 计算航迹坐标
+    BestFit16(i)=MyCost(Xbest16,1);  %% 计算无人机的总成本
+    UAVfit16(i,:)=MyCost(Xbest16,2);  %% 计算无人机的四个成本
+    St=Et+1;
+end
+%% MCOA 运行规划
+N=length(bestX17)/(3*model.n);  %无人机的数量
+St=1;
+for i=1:N %计算每个无人机的适应度值
+    Et=St+3*model.n-1;
+    Xbest17=bestX17(St:Et);
+    BestPosition(i,:) = SphericalToCart(Xbest17);%% 计算航迹坐标
+    BestFit17(i)=MyCost(Xbest17,1);  %% 计算无人机的总成本
+    UAVfit17(i,:)=MyCost(Xbest17,2);  %% 计算无人机的四个成本
+    St=Et+1;
+end
+
+
+%% 对结果转置
+BestFit1=BestFit1(:);
+BestFit2=BestFit2(:);
+BestFit3=BestFit3(:);
+BestFit4=BestFit4(:);
+BestFit5=BestFit5(:);
+BestFit6=BestFit6(:);
+BestFit7=BestFit7(:);
+BestFit8=BestFit8(:);
+BestFit9=BestFit9(:);
+BestFit10=BestFit10(:);
+BestFit11=BestFit11(:);
+BestFit12=BestFit12(:);
+BestFit13=BestFit13(:);
+BestFit14=BestFit14(:);
+BestFit15=BestFit15(:);
+BestFit16=BestFit16(:);
+BestFit17=BestFit17(:);
+
+%% 保存结果
+totalcost1=[BestFit1 BestFit2 BestFit3 BestFit4 BestFit5 BestFit6 BestFit7 BestFit8 BestFit9 BestFit10 BestFit11 BestFit12 BestFit13 BestFit14 BestFit15 BestFit16 BestFit17];
+totalcost=vertcat(totalcost,totalcost1);
+
+
+
+
