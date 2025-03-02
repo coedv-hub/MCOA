@@ -26,7 +26,7 @@ Each folder contains a `main.m` file, which is the entry point for running the e
 
 ### 🤖 2D Mobile Robot Path Planning
 - **Path Length**: MCOA achieved an average reduction of 44% in path length across different grid sizes (20x20, 40x40, and 60x60).
-
+<img src="./Exp2_Robot%20path%20planning/Result/Path%20Length.png" alt="Path Length" width="80%">
 - **Stability**: MCOA consistently performed well across all grid sizes, demonstrating its robustness in complex environments.
 <div style="display: flex; justify-content: space-between;">
   <img src="Exp2_Robot path planning/Result/MCOA2.png" alt="Image 1" width="30%">
