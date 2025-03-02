@@ -15,10 +15,9 @@ Each folder contains a `main.m` file, which is the entry point for running the e
 
 ### Prerequisites
 - MATLAB
-- 
 ### Running the Experiments
 
 #### 3D UAV Path Planning
 1. Navigate to the `UAV_Experiments` folder.
 2. Open MATLAB and run the `main.m` file:
-3.The results will be displayed in the MATLAB command window and saved in the `UAV_Experiments/Results` folder.
+3. The results will be displayed in the MATLAB command window and saved in the `UAV_Experiments/Results` folder.
