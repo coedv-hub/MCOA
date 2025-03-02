@@ -53,6 +53,7 @@ Before applying MCOA to UAV and robot path planning, we conducted extensive benc
 
 - **30D**:
 <img src="Benchmark_Results/30D Convergence Comparison on CEC2014 Test Set.png" width="60%">
+
 - **50D**:
 <img src="Benchmark_Results/50D Convergence Comparison on CEC2014 Test Set.png" width="60%">
  
