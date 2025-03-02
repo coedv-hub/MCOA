@@ -50,14 +50,12 @@ Before applying MCOA to UAV and robot path planning, we conducted extensive benc
 - **Convergence Speed(CEC2014)**: MCOA demonstrated faster convergence compared to other algorithms, especially in high-dimensional problems (10D, 30D, and 50D).
 - **10D**:  
 <img src="Benchmark_Results/10D Convergence Comparison on CEC2014 Test Set.png" width="60%">
-    *Figure 4: Convergence curves of MCOA compared to other algorithms on CEC2014 test functions (10D).*  
+
 - **30D**:
 <img src="Benchmark_Results/30D Convergence Comparison on CEC2014 Test Set.png" width="60%">
-    *Figure 5: Convergence curves of MCOA compared to other algorithms on CEC2014 test functions (30D).*  
 - **50D**:
 <img src="Benchmark_Results/50D Convergence Comparison on CEC2014 Test Set.png" width="60%">
  
-    *Figure 6: Convergence curves of MCOA compared to other algorithms on CEC2014 test functions (50D). *
     
 - **Convergence Accuracy(CEC2014)**: MCOA achieved competitive results in terms of solution accuracy across multiple benchmark functions.
 
