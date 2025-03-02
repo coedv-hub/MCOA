@@ -46,7 +46,9 @@ Before applying MCOA to UAV and robot path planning, we conducted extensive benc
 
 - **Improvement Strategy Analysis(CEC2017)**: The proposed improvement strategies (refractive opposition-based population selection, centroid-guided exploration, and adaptive cave competition) significantly enhanced MCOA's performance.
 <img src="Benchmark_Results/Impact of Improvement Strategies on CEC2017 Test Set.png" width="60%">
+
 - **Convergence Speed(CEC2014)**: MCOA demonstrated faster convergence compared to other algorithms, especially in high-dimensional problems (10D, 30D, and 50D).
+
 - **Convergence Accuracy(CEC2014)**: MCOA achieved competitive results in terms of solution accuracy across multiple benchmark functions.
 
 ### Selected Results
