@@ -39,7 +39,7 @@ Before applying MCOA to UAV and robot path planning, we conducted extensive benc
 
 ### Key Metrics
 - **Population Diversity(CEC2017)**: MCOA maintained higher population diversity throughout the iterations, which helped in avoiding local optima and exploring global solutions.
-<img src="" width="80%">
+<img src="Benchmark_Results/Population Diversity Comparison on CEC2017 Test Set.jpg" width="80%">
 - **Exploration vs. Exploitation Balance(CEC2017)**: MCOA effectively balanced exploration and exploitation, ensuring a dynamic search process that adapts to different stages of optimization.
 <img src="" width="80%">
 - **Improvement Strategy Analysis(CEC2017)**：The proposed improvement strategies (refractive opposition-based population selection, centroid-guided exploration, and adaptive cave competition) significantly enhanced MCOA's performance.
