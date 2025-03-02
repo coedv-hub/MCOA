@@ -73,4 +73,5 @@ Before applying MCOA to UAV and robot path planning, we conducted extensive benc
 <img src="Benchmark_Results/Benchmark_Results/Statistics Number.png" width="80%">
 
 - **Friedman Mean Rank Test**: MCOA ranked first in overall performance across all dimensions (10D, 30D, and 50D), proving its superiority in numerical optimization.
- 
+ <img src="Benchmark_Results/Benchmark_Results/Friedman mean rank test.jpg" width="80%">
+
