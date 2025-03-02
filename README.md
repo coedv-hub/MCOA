@@ -45,7 +45,7 @@ Before applying MCOA to UAV and robot path planning, we conducted extensive benc
 <img src="Benchmark_Results/Exploration vs. Exploitation Balance on CEC2017 Test Set.png" width="80%">
 
 - **Adaptive Cave Competition Strategy(CEC2017)**: MCOA's adaptive cave competition strategy enhanced performance, achieving faster convergence and higher accuracy.
-<img src="Benchmark_Results/Impact of Improvement Strategies on CEC2017 Test Set.png" width="60%">
+<img src="Benchmark_Results/Impact of Improvement Strategies on CEC2017 Test Set.png" width="80%">
 
 - **Convergence Speed(CEC2014)**: MCOA demonstrated faster convergence and achieved higher accuracy compared to other algorithms, especially in high - dimensional problems (10D, 30D, and 50D).
 - **10D**:  
