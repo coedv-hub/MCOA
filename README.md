@@ -38,11 +38,11 @@ Each folder contains a `main.m` file, which is the entry point for running the e
 Before applying MCOA to UAV and robot path planning, we conducted extensive benchmark tests on the CEC2014 and CEC2017 datasets to evaluate the algorithm's performance in numerical optimization. Below are the key results:
 
 ### Key Metrics
-- **Population Diversity**: MCOA maintained higher population diversity throughout the iterations, which helped in avoiding local optima and exploring global solutions.
-- **Exploration vs. Exploitation Balance**: MCOA effectively balanced exploration and exploitation, ensuring a dynamic search process that adapts to different stages of optimization.
-- **Improvement Strategy Analysis**：The proposed improvement strategies (refractive opposition-based population selection, centroid-guided exploration, and adaptive cave competition) significantly enhanced MCOA's performance.  
-- **Convergence Speed**: MCOA demonstrated faster convergence compared to other algorithms, especially in high-dimensional problems (10D, 30D, and 50D).
-- **Convergence Accuracy**: MCOA achieved competitive results in terms of solution accuracy across multiple benchmark functions.
+- **Population Diversity(CEC2017)**: MCOA maintained higher population diversity throughout the iterations, which helped in avoiding local optima and exploring global solutions.
+- **Exploration vs. Exploitation Balance(CEC2017)**: MCOA effectively balanced exploration and exploitation, ensuring a dynamic search process that adapts to different stages of optimization.
+- **Improvement Strategy Analysis(CEC2017)**：The proposed improvement strategies (refractive opposition-based population selection, centroid-guided exploration, and adaptive cave competition) significantly enhanced MCOA's performance.  
+- **Convergence Speed(CEC2014)**: MCOA demonstrated faster convergence compared to other algorithms, especially in high-dimensional problems (10D, 30D, and 50D).
+- **Convergence Accuracy(CEC2014)**: MCOA achieved competitive results in terms of solution accuracy across multiple benchmark functions.
 
 ### Selected Results
 
