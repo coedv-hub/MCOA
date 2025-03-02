@@ -35,7 +35,7 @@ Each folder contains a `main.m` file, which is the entry point for running the e
 </div>
 
 ## 📊 Benchmark Results on CEC2014
-Before applying MCOA to UAV and robot path planning, we conducted extensive benchmark tests on the CEC2014 dataset to evaluate the algorithm's performance in numerical optimization. Below are the key results:
+Before applying MCOA to UAV and robot path planning, we conducted extensive benchmark tests on the CEC2014 and CEC2017 datasets to evaluate the algorithm's performance in numerical optimization. Below are the key results:
 
 ### Key Metrics
 
