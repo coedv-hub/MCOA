@@ -67,4 +67,8 @@ Before applying MCOA to UAV and robot path planning, we conducted extensive benc
 
 - **50D**:
 <img src="Benchmark_Results/50D Box-Line Chart Analysis.png" width="60%">
+
+ ## Statistical Analysis
+- **Wilcoxon Rank Sum Test**: MCOA showed significant improvements over other algorithms in most test cases, with p-values < 0.05, indicating statistically significant differences.
+- **Friedman Mean Rank Test**: MCOA ranked first in overall performance across all dimensions (10D, 30D, and 50D), proving its superiority in numerical optimization.
  
