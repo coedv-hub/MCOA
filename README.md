@@ -14,7 +14,7 @@ Each folder contains a `main.m` file, which is the entry point for running the e
 ## 📊 Results Showcase
 ### ✈️ 3D UAV Path Planning
 - **Total Flight Cost**: MCOA achieved a **16.7% reduction** in total flight cost compared to the average of other algorithms.
-<img src="./Exp2_Robot%20path%20planning/Result/Path%20Length.png" alt="Path Length" width="80%">
+![image](https://github.com/user-attachments/assets/802fb452-fef6-4216-8bad-0ae66b7a997b)
 - **Computational Time**: MCOA was **69.2% faster** than the average computational time of other algorithms.
 <img src="./Exp1_UAV%20path%20planning/Result/UAV%20Path%20Planning%20Time%20Consumption.png" alt="UAV Path Planning Time Consumption" width="80%">
 
