@@ -58,7 +58,5 @@ Before applying MCOA to UAV and robot path planning, we conducted extensive benc
 <img src="Benchmark_Results/50D Convergence Comparison on CEC2014 Test Set.png" width="60%">
  
     
-- **Convergence Accuracy(CEC2014)**: MCOA achieved competitive results in terms of solution accuracy across multiple benchmark functions.
-
-
+- **Statistical Performance (CEC2014)**: MCOA demonstrated robust performance across multiple runs, with lower variance and more consistent results compared to other algorithms.
 
