@@ -1,6 +1,6 @@
-# Multi-Strategy Enhanced COA for Path Planning in Autonomous Navigation
+# 🚀Multi-Strategy Enhanced COA for Path Planning in Autonomous Navigation
 
-This repository contains the source code and experimental results for the paper titled **"Multi-Strategy Enhanced COA for Path Planning in Autonomous Navigation"**. The paper proposes a novel optimization algorithm called **MCOA** (Multi-Strategy Enhanced Crayfish Optimization Algorithm) for path planning in both 3D UAV and 2D mobile robot scenarios.
+Welcome to the repository! This repository showcases the source code and experimental results of **MCOA (Multi-Strategy Enhanced Crayfish Optimization Algorithm)**, designed for autonomous navigation. We have validated its performance in path planning scenarios for 3D UAVs and 2D mobile robots.
 
 ## Repository Structure
 
