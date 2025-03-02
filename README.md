@@ -33,3 +33,11 @@ Each folder contains a `main.m` file, which is the entry point for running the e
   <img src="Exp2_Robot path planning/Result/MCOA4.png" alt="Image 2" width="30%">
   <img src="Exp2_Robot path planning/Result/MCOA6.png" alt="Image 3" width="30%">
 </div>
+
+## 📊 Benchmark Results on CEC2014
+Before applying MCOA to UAV and robot path planning, we conducted extensive benchmark tests on the CEC2014 dataset to evaluate the algorithm's performance in numerical optimization. Below are the key results:
+
+### Key Metrics
+
+### Selected Results
+
