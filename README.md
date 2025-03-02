@@ -26,6 +26,6 @@ Each folder contains a `main.m` file, which is the entry point for running the e
 
 #### Example Path Trajectory
 <div style="display: flex; justify-content: space-between;">
-  <img src="images/image1.png" alt="Image 1" width="45%">
-  <img src="images/image2.png" alt="Image 2" width="45%">
+  <img src="Exp1_UAV path planning/Result/MCOA2.png" alt="Image 1" width="45%">
+  <img src="Exp1_UAV path planning/Result/MCOA1.png" alt="Image 2" width="45%">
 </div>
