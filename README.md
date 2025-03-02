@@ -60,11 +60,11 @@ Before applying MCOA to UAV and robot path planning, we conducted extensive benc
     
 - **Statistical Performance (CEC2014)**: MCOA demonstrated robust performance across multiple runs, with lower variance and more consistent results compared to other algorithms.
 - **10D**:  
-<img src="Benchmark_Results/10D Box-Line Chart Analysis" width="60%">
+<img src="Benchmark_Results/10D Box-Line Chart Analysis.png" width="60%">
 
 - **30D**:
-<img src="Benchmark_Results/30D Box-Line Chart Analysis" width="60%">
+<img src="Benchmark_Results/30D Box-Line Chart Analysis.png" width="60%">
 
 - **50D**:
-<img src="Benchmark_Results/50D Box-Line Chart Analysis" width="60%">
+<img src="Benchmark_Results/50D Box-Line Chart Analysis.png" width="60%">
  
